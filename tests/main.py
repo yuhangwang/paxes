@@ -1,3 +1,4 @@
-from paxes.main import main
+import yaml
 
-main()
+if __name__ == '__main__':
+    main()

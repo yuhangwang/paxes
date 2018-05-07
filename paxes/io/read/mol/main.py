@@ -1,4 +1,5 @@
 from typing import List
+
 """
 Load a molecule along with its trajectories
 """
