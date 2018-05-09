@@ -13,4 +13,10 @@ setup(
         "paxes.foo",
     ],
     ext_modules=cythonize("**/*.pyx"),
+    install_requires=[
+        "ProDy",
+        "cytoolz",
+        "atomicblock",
+        "numpy",
+    ],
 )

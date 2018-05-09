@@ -13,11 +13,15 @@ tasks:
   clean:
     cmds:
       - python setup.py clean
-
+  
+  clear:
+    cmds:
+      - find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf 
+  
   develop:
     cmds:
       - pip install --no-deps -e .
 
   test:
     cmds:
-      - python tests/main.py
+      - pytest
