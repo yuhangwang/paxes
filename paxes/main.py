@@ -15,6 +15,7 @@ params:
     - chain C and resid 547 to 598
 """
 
+from paxes import inertia
 
 def main(specs: dict):
     print()
