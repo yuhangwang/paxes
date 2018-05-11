@@ -9,9 +9,12 @@ setup(
     author_email="stevenyhw.project@gmail.com",
     packages=[
         "paxes",
-        "paxes.fib",
-        "paxes.foo",
+        "paxes.inertia",
+        "paxes.hello",
     ],
+    package_data={
+        "paxes": ["paxes/*/*.pxd"],
+    },
     ext_modules=cythonize("**/*.pyx"),
     install_requires=[
         "ProDy",
