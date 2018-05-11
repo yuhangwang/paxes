@@ -1,5 +1,5 @@
 from cython cimport floating
 
 
-cpdef floating[:, :] inertia(floating[:, :] coords):
+cpdef floating[:, :] tensor(floating[:, :] coords):
     return coords

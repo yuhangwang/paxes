@@ -3,12 +3,12 @@
 /* BEGIN: Cython Metadata
 {
     "distutils": {
-        "name": "tensor",
+        "name": "paxes.inertia.tensor",
         "sources": [
             "paxes/inertia/tensor.pyx"
         ]
     },
-    "module_name": "tensor"
+    "module_name": "paxes.inertia.tensor"
 }
 END: Cython Metadata */
 
@@ -570,8 +570,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__tensor
-#define __PYX_HAVE_API__tensor
+#define __PYX_HAVE__paxes__inertia__tensor
+#define __PYX_HAVE_API__paxes__inertia__tensor
 /* Early includes */
 #include "pythread.h"
 #include <string.h>
@@ -1754,7 +1754,7 @@ static PyObject *__pyx_memoryviewslice_assign_item_from_object(struct __pyx_memo
 
 /* Module declarations from 'cython' */
 
-/* Module declarations from 'tensor' */
+/* Module declarations from 'paxes.inertia.tensor' */
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
 static PyTypeObject *__pyx_memoryview_type = 0;
@@ -1766,8 +1766,8 @@ static PyObject *contiguous = 0;
 static PyObject *indirect_contiguous = 0;
 static int __pyx_memoryview_thread_locks_used;
 static PyThread_type_lock __pyx_memoryview_thread_locks[8];
-static __Pyx_memviewslice __pyx_fuse_0__pyx_f_6tensor_inertia(__Pyx_memviewslice, int __pyx_skip_dispatch); /*proto*/
-static __Pyx_memviewslice __pyx_fuse_1__pyx_f_6tensor_inertia(__Pyx_memviewslice, int __pyx_skip_dispatch); /*proto*/
+static __Pyx_memviewslice __pyx_fuse_0__pyx_f_5paxes_7inertia_6tensor_tensor(__Pyx_memviewslice, int __pyx_skip_dispatch); /*proto*/
+static __Pyx_memviewslice __pyx_fuse_1__pyx_f_5paxes_7inertia_6tensor_tensor(__Pyx_memviewslice, int __pyx_skip_dispatch); /*proto*/
 static struct __pyx_array_obj *__pyx_array_new(PyObject *, Py_ssize_t, char *, char *, char *); /*proto*/
 static void *__pyx_align_pointer(void *, size_t); /*proto*/
 static PyObject *__pyx_memoryview_new(PyObject *, int, int, __Pyx_TypeInfo *); /*proto*/
@@ -1803,11 +1803,11 @@ static void __pyx_memoryview__slice_assign_scalar(char *, Py_ssize_t *, Py_ssize
 static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, PyObject *); /*proto*/
 static __Pyx_TypeInfo __Pyx_TypeInfo_float = { "float", NULL, sizeof(float), { 0 }, 0, 'R', 0, 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_double = { "double", NULL, sizeof(double), { 0 }, 0, 'R', 0, 0 };
-#define __Pyx_MODULE_NAME "tensor"
-extern int __pyx_module_is_main_tensor;
-int __pyx_module_is_main_tensor = 0;
+#define __Pyx_MODULE_NAME "paxes.inertia.tensor"
+extern int __pyx_module_is_main_paxes__inertia__tensor;
+int __pyx_module_is_main_paxes__inertia__tensor = 0;
 
-/* Implementation of 'tensor' */
+/* Implementation of 'paxes.inertia.tensor' */
 static PyObject *__pyx_builtin_TypeError;
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_ValueError;
@@ -1863,7 +1863,6 @@ static const char __pyx_k_tensor[] = "tensor";
 static const char __pyx_k_unpack[] = "unpack";
 static const char __pyx_k_update[] = "update";
 static const char __pyx_k_fortran[] = "fortran";
-static const char __pyx_k_inertia[] = "inertia";
 static const char __pyx_k_memview[] = "memview";
 static const char __pyx_k_Ellipsis[] = "Ellipsis";
 static const char __pyx_k_defaults[] = "defaults";
@@ -1891,11 +1890,12 @@ static const char __pyx_k_allocate_buffer[] = "allocate_buffer";
 static const char __pyx_k_dtype_is_object[] = "dtype_is_object";
 static const char __pyx_k_pyx_PickleError[] = "__pyx_PickleError";
 static const char __pyx_k_setstate_cython[] = "__setstate_cython__";
-static const char __pyx_k_pyx_fuse_0inertia[] = "__pyx_fuse_0inertia";
-static const char __pyx_k_pyx_fuse_1inertia[] = "__pyx_fuse_1inertia";
+static const char __pyx_k_pyx_fuse_0tensor[] = "__pyx_fuse_0tensor";
+static const char __pyx_k_pyx_fuse_1tensor[] = "__pyx_fuse_1tensor";
 static const char __pyx_k_pyx_unpickle_Enum[] = "__pyx_unpickle_Enum";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_strided_and_direct[] = "<strided and direct>";
+static const char __pyx_k_paxes_inertia_tensor[] = "paxes.inertia.tensor";
 static const char __pyx_k_strided_and_indirect[] = "<strided and indirect>";
 static const char __pyx_k_contiguous_and_direct[] = "<contiguous and direct>";
 static const char __pyx_k_MemoryView_of_r_object[] = "<MemoryView of %r object>";
@@ -1979,7 +1979,6 @@ static PyObject *__pyx_n_s_getstate;
 static PyObject *__pyx_kp_s_got_differing_extents_in_dimensi;
 static PyObject *__pyx_n_s_id;
 static PyObject *__pyx_n_s_import;
-static PyObject *__pyx_n_s_inertia;
 static PyObject *__pyx_n_s_itemsize;
 static PyObject *__pyx_kp_s_itemsize_0_for_cython_array;
 static PyObject *__pyx_n_s_kind;
@@ -1995,12 +1994,13 @@ static PyObject *__pyx_kp_s_no_default___reduce___due_to_non;
 static PyObject *__pyx_n_s_numpy;
 static PyObject *__pyx_n_s_obj;
 static PyObject *__pyx_n_s_pack;
+static PyObject *__pyx_n_s_paxes_inertia_tensor;
 static PyObject *__pyx_kp_s_paxes_inertia_tensor_pyx;
 static PyObject *__pyx_n_s_pickle;
 static PyObject *__pyx_n_s_pyx_PickleError;
 static PyObject *__pyx_n_s_pyx_checksum;
-static PyObject *__pyx_n_s_pyx_fuse_0inertia;
-static PyObject *__pyx_n_s_pyx_fuse_1inertia;
+static PyObject *__pyx_n_s_pyx_fuse_0tensor;
+static PyObject *__pyx_n_s_pyx_fuse_1tensor;
 static PyObject *__pyx_n_s_pyx_getbuffer;
 static PyObject *__pyx_n_s_pyx_result;
 static PyObject *__pyx_n_s_pyx_state;
@@ -2032,9 +2032,9 @@ static PyObject *__pyx_kp_s_unable_to_allocate_array_data;
 static PyObject *__pyx_kp_s_unable_to_allocate_shape_and_str;
 static PyObject *__pyx_n_s_unpack;
 static PyObject *__pyx_n_s_update;
-static PyObject *__pyx_pf_6tensor_inertia(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults); /* proto */
-static PyObject *__pyx_pf_6tensor_2__pyx_fuse_0inertia(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_coords); /* proto */
-static PyObject *__pyx_pf_6tensor_4__pyx_fuse_1inertia(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_coords); /* proto */
+static PyObject *__pyx_pf_5paxes_7inertia_6tensor_tensor(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults); /* proto */
+static PyObject *__pyx_pf_5paxes_7inertia_6tensor_2__pyx_fuse_0tensor(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_coords); /* proto */
+static PyObject *__pyx_pf_5paxes_7inertia_6tensor_4__pyx_fuse_1tensor(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_coords); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array_2__getbuffer__(struct __pyx_array_obj *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_array___pyx_pf_15View_dot_MemoryView_5array_4__dealloc__(struct __pyx_array_obj *__pyx_v_self); /* proto */
@@ -2121,17 +2121,17 @@ static PyObject *__pyx_codeobj__30;
 static PyObject *__pyx_codeobj__37;
 /* Late includes */
 
-/* "tensor.pyx":4
+/* "paxes/inertia/tensor.pyx":4
  * 
  * 
- * cpdef floating[:, :] inertia(floating[:, :] coords):             # <<<<<<<<<<<<<<
+ * cpdef floating[:, :] tensor(floating[:, :] coords):             # <<<<<<<<<<<<<<
  *     return coords
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6tensor_1inertia(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_6tensor_1inertia = {"inertia", (PyCFunction)__pyx_pw_6tensor_1inertia, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6tensor_1inertia(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_5paxes_7inertia_6tensor_1tensor(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_5paxes_7inertia_6tensor_1tensor = {"tensor", (PyCFunction)__pyx_pw_5paxes_7inertia_6tensor_1tensor, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_5paxes_7inertia_6tensor_1tensor(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_signatures = 0;
   PyObject *__pyx_v_args = 0;
   PyObject *__pyx_v_kwargs = 0;
@@ -2201,18 +2201,18 @@ static PyObject *__pyx_pw_6tensor_1inertia(PyObject *__pyx_self, PyObject *__pyx
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__pyx_fused_cpdef", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 4, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("tensor.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("paxes.inertia.tensor.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6tensor_inertia(__pyx_self, __pyx_v_signatures, __pyx_v_args, __pyx_v_kwargs, __pyx_v_defaults);
+  __pyx_r = __pyx_pf_5paxes_7inertia_6tensor_tensor(__pyx_self, __pyx_v_signatures, __pyx_v_args, __pyx_v_kwargs, __pyx_v_defaults);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6tensor_inertia(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults) {
+static PyObject *__pyx_pf_5paxes_7inertia_6tensor_tensor(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_signatures, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs, CYTHON_UNUSED PyObject *__pyx_v_defaults) {
   PyObject *__pyx_v_dest_sig = NULL;
   Py_ssize_t __pyx_v_i;
   PyTypeObject *__pyx_v_ndarray = 0;
@@ -2246,7 +2246,7 @@ static PyObject *__pyx_pf_6tensor_inertia(CYTHON_UNUSED PyObject *__pyx_self, Py
   Py_ssize_t __pyx_t_14;
   Py_ssize_t __pyx_t_15;
   int __pyx_t_16;
-  __Pyx_RefNannySetupContext("inertia", 0);
+  __Pyx_RefNannySetupContext("tensor", 0);
   __Pyx_INCREF(__pyx_v_kwargs);
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2609,7 +2609,7 @@ static PyObject *__pyx_pf_6tensor_inertia(CYTHON_UNUSED PyObject *__pyx_self, Py
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_12);
-  __Pyx_AddTraceback("tensor.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("paxes.inertia.tensor.__pyx_fused_cpdef", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_dest_sig);
@@ -2627,26 +2627,26 @@ static PyObject *__pyx_pf_6tensor_inertia(CYTHON_UNUSED PyObject *__pyx_self, Py
   return __pyx_r;
 }
 
-static PyObject *__pyx_pw_6tensor_3__pyx_fuse_0inertia(PyObject *__pyx_self, PyObject *__pyx_arg_coords); /*proto*/
-static PyObject *__pyx_pw_6tensor_1inertia(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static __Pyx_memviewslice __pyx_fuse_0__pyx_f_6tensor_inertia(__Pyx_memviewslice __pyx_v_coords, CYTHON_UNUSED int __pyx_skip_dispatch) {
+static PyObject *__pyx_pw_5paxes_7inertia_6tensor_3__pyx_fuse_0tensor(PyObject *__pyx_self, PyObject *__pyx_arg_coords); /*proto*/
+static PyObject *__pyx_pw_5paxes_7inertia_6tensor_1tensor(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static __Pyx_memviewslice __pyx_fuse_0__pyx_f_5paxes_7inertia_6tensor_tensor(__Pyx_memviewslice __pyx_v_coords, CYTHON_UNUSED int __pyx_skip_dispatch) {
   __Pyx_memviewslice __pyx_r = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__pyx_fuse_0inertia", 0);
+  __Pyx_RefNannySetupContext("__pyx_fuse_0tensor", 0);
 
-  /* "tensor.pyx":5
+  /* "paxes/inertia/tensor.pyx":5
  * 
- * cpdef floating[:, :] inertia(floating[:, :] coords):
+ * cpdef floating[:, :] tensor(floating[:, :] coords):
  *     return coords             # <<<<<<<<<<<<<<
  */
   __PYX_INC_MEMVIEW(&__pyx_v_coords, 0);
   __pyx_r = __pyx_v_coords;
   goto __pyx_L0;
 
-  /* "tensor.pyx":4
+  /* "paxes/inertia/tensor.pyx":4
  * 
  * 
- * cpdef floating[:, :] inertia(floating[:, :] coords):             # <<<<<<<<<<<<<<
+ * cpdef floating[:, :] tensor(floating[:, :] coords):             # <<<<<<<<<<<<<<
  *     return coords
  */
 
@@ -2660,38 +2660,38 @@ static __Pyx_memviewslice __pyx_fuse_0__pyx_f_6tensor_inertia(__Pyx_memviewslice
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6tensor_3__pyx_fuse_0inertia(PyObject *__pyx_self, PyObject *__pyx_arg_coords); /*proto*/
-static PyMethodDef __pyx_fuse_0__pyx_mdef_6tensor_3__pyx_fuse_0inertia = {"__pyx_fuse_0inertia", (PyCFunction)__pyx_pw_6tensor_3__pyx_fuse_0inertia, METH_O, 0};
-static PyObject *__pyx_pw_6tensor_3__pyx_fuse_0inertia(PyObject *__pyx_self, PyObject *__pyx_arg_coords) {
+static PyObject *__pyx_pw_5paxes_7inertia_6tensor_3__pyx_fuse_0tensor(PyObject *__pyx_self, PyObject *__pyx_arg_coords); /*proto*/
+static PyMethodDef __pyx_fuse_0__pyx_mdef_5paxes_7inertia_6tensor_3__pyx_fuse_0tensor = {"__pyx_fuse_0tensor", (PyCFunction)__pyx_pw_5paxes_7inertia_6tensor_3__pyx_fuse_0tensor, METH_O, 0};
+static PyObject *__pyx_pw_5paxes_7inertia_6tensor_3__pyx_fuse_0tensor(PyObject *__pyx_self, PyObject *__pyx_arg_coords) {
   __Pyx_memviewslice __pyx_v_coords = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__pyx_fuse_0inertia (wrapper)", 0);
+  __Pyx_RefNannySetupContext("__pyx_fuse_0tensor (wrapper)", 0);
   assert(__pyx_arg_coords); {
     __pyx_v_coords = __Pyx_PyObject_to_MemoryviewSlice_dsds_float(__pyx_arg_coords, PyBUF_WRITABLE); if (unlikely(!__pyx_v_coords.memview)) __PYX_ERR(0, 4, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("tensor.__pyx_fuse_0inertia", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("paxes.inertia.tensor.__pyx_fuse_0tensor", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6tensor_2__pyx_fuse_0inertia(__pyx_self, __pyx_v_coords);
+  __pyx_r = __pyx_pf_5paxes_7inertia_6tensor_2__pyx_fuse_0tensor(__pyx_self, __pyx_v_coords);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6tensor_2__pyx_fuse_0inertia(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_coords) {
+static PyObject *__pyx_pf_5paxes_7inertia_6tensor_2__pyx_fuse_0tensor(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_coords) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_t_2 = NULL;
-  __Pyx_RefNannySetupContext("__pyx_fuse_0inertia", 0);
+  __Pyx_RefNannySetupContext("__pyx_fuse_0tensor", 0);
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(!__pyx_v_coords.memview)) { __Pyx_RaiseUnboundLocalError("coords"); __PYX_ERR(0, 4, __pyx_L1_error) }
-  __pyx_t_1 = __pyx_fuse_0__pyx_f_6tensor_inertia(__pyx_v_coords, 0); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_1 = __pyx_fuse_0__pyx_f_5paxes_7inertia_6tensor_tensor(__pyx_v_coords, 0); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 4, __pyx_L1_error)
   __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_t_1, 2, (PyObject *(*)(char *)) __pyx_memview_get_float, (int (*)(char *, PyObject *)) __pyx_memview_set_float, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __PYX_XDEC_MEMVIEW(&__pyx_t_1, 1);
@@ -2705,7 +2705,7 @@ static PyObject *__pyx_pf_6tensor_2__pyx_fuse_0inertia(CYTHON_UNUSED PyObject *_
   __pyx_L1_error:;
   __PYX_XDEC_MEMVIEW(&__pyx_t_1, 1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("tensor.__pyx_fuse_0inertia", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("paxes.inertia.tensor.__pyx_fuse_0tensor", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_coords, 1);
@@ -2714,26 +2714,26 @@ static PyObject *__pyx_pf_6tensor_2__pyx_fuse_0inertia(CYTHON_UNUSED PyObject *_
   return __pyx_r;
 }
 
-static PyObject *__pyx_pw_6tensor_5__pyx_fuse_1inertia(PyObject *__pyx_self, PyObject *__pyx_arg_coords); /*proto*/
-static PyObject *__pyx_pw_6tensor_1inertia(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static __Pyx_memviewslice __pyx_fuse_1__pyx_f_6tensor_inertia(__Pyx_memviewslice __pyx_v_coords, CYTHON_UNUSED int __pyx_skip_dispatch) {
+static PyObject *__pyx_pw_5paxes_7inertia_6tensor_5__pyx_fuse_1tensor(PyObject *__pyx_self, PyObject *__pyx_arg_coords); /*proto*/
+static PyObject *__pyx_pw_5paxes_7inertia_6tensor_1tensor(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static __Pyx_memviewslice __pyx_fuse_1__pyx_f_5paxes_7inertia_6tensor_tensor(__Pyx_memviewslice __pyx_v_coords, CYTHON_UNUSED int __pyx_skip_dispatch) {
   __Pyx_memviewslice __pyx_r = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__pyx_fuse_1inertia", 0);
+  __Pyx_RefNannySetupContext("__pyx_fuse_1tensor", 0);
 
-  /* "tensor.pyx":5
+  /* "paxes/inertia/tensor.pyx":5
  * 
- * cpdef floating[:, :] inertia(floating[:, :] coords):
+ * cpdef floating[:, :] tensor(floating[:, :] coords):
  *     return coords             # <<<<<<<<<<<<<<
  */
   __PYX_INC_MEMVIEW(&__pyx_v_coords, 0);
   __pyx_r = __pyx_v_coords;
   goto __pyx_L0;
 
-  /* "tensor.pyx":4
+  /* "paxes/inertia/tensor.pyx":4
  * 
  * 
- * cpdef floating[:, :] inertia(floating[:, :] coords):             # <<<<<<<<<<<<<<
+ * cpdef floating[:, :] tensor(floating[:, :] coords):             # <<<<<<<<<<<<<<
  *     return coords
  */
 
@@ -2747,38 +2747,38 @@ static __Pyx_memviewslice __pyx_fuse_1__pyx_f_6tensor_inertia(__Pyx_memviewslice
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6tensor_5__pyx_fuse_1inertia(PyObject *__pyx_self, PyObject *__pyx_arg_coords); /*proto*/
-static PyMethodDef __pyx_fuse_1__pyx_mdef_6tensor_5__pyx_fuse_1inertia = {"__pyx_fuse_1inertia", (PyCFunction)__pyx_pw_6tensor_5__pyx_fuse_1inertia, METH_O, 0};
-static PyObject *__pyx_pw_6tensor_5__pyx_fuse_1inertia(PyObject *__pyx_self, PyObject *__pyx_arg_coords) {
+static PyObject *__pyx_pw_5paxes_7inertia_6tensor_5__pyx_fuse_1tensor(PyObject *__pyx_self, PyObject *__pyx_arg_coords); /*proto*/
+static PyMethodDef __pyx_fuse_1__pyx_mdef_5paxes_7inertia_6tensor_5__pyx_fuse_1tensor = {"__pyx_fuse_1tensor", (PyCFunction)__pyx_pw_5paxes_7inertia_6tensor_5__pyx_fuse_1tensor, METH_O, 0};
+static PyObject *__pyx_pw_5paxes_7inertia_6tensor_5__pyx_fuse_1tensor(PyObject *__pyx_self, PyObject *__pyx_arg_coords) {
   __Pyx_memviewslice __pyx_v_coords = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__pyx_fuse_1inertia (wrapper)", 0);
+  __Pyx_RefNannySetupContext("__pyx_fuse_1tensor (wrapper)", 0);
   assert(__pyx_arg_coords); {
     __pyx_v_coords = __Pyx_PyObject_to_MemoryviewSlice_dsds_double(__pyx_arg_coords, PyBUF_WRITABLE); if (unlikely(!__pyx_v_coords.memview)) __PYX_ERR(0, 4, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("tensor.__pyx_fuse_1inertia", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("paxes.inertia.tensor.__pyx_fuse_1tensor", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6tensor_4__pyx_fuse_1inertia(__pyx_self, __pyx_v_coords);
+  __pyx_r = __pyx_pf_5paxes_7inertia_6tensor_4__pyx_fuse_1tensor(__pyx_self, __pyx_v_coords);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6tensor_4__pyx_fuse_1inertia(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_coords) {
+static PyObject *__pyx_pf_5paxes_7inertia_6tensor_4__pyx_fuse_1tensor(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_coords) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_t_2 = NULL;
-  __Pyx_RefNannySetupContext("__pyx_fuse_1inertia", 0);
+  __Pyx_RefNannySetupContext("__pyx_fuse_1tensor", 0);
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(!__pyx_v_coords.memview)) { __Pyx_RaiseUnboundLocalError("coords"); __PYX_ERR(0, 4, __pyx_L1_error) }
-  __pyx_t_1 = __pyx_fuse_1__pyx_f_6tensor_inertia(__pyx_v_coords, 0); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_1 = __pyx_fuse_1__pyx_f_5paxes_7inertia_6tensor_tensor(__pyx_v_coords, 0); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 4, __pyx_L1_error)
   __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_t_1, 2, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __PYX_XDEC_MEMVIEW(&__pyx_t_1, 1);
@@ -2792,7 +2792,7 @@ static PyObject *__pyx_pf_6tensor_4__pyx_fuse_1inertia(CYTHON_UNUSED PyObject *_
   __pyx_L1_error:;
   __PYX_XDEC_MEMVIEW(&__pyx_t_1, 1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("tensor.__pyx_fuse_1inertia", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("paxes.inertia.tensor.__pyx_fuse_1tensor", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_coords, 1);
@@ -15839,7 +15839,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "tensor.array", /*tp_name*/
+  "paxes.inertia.tensor.array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -15947,7 +15947,7 @@ static PyMethodDef __pyx_methods_Enum[] = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "tensor.Enum", /*tp_name*/
+  "paxes.inertia.tensor.Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -16197,7 +16197,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "tensor.memoryview", /*tp_name*/
+  "paxes.inertia.tensor.memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -16324,7 +16324,7 @@ static struct PyGetSetDef __pyx_getsets__memoryviewslice[] = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "tensor._memoryviewslice", /*tp_name*/
+  "paxes.inertia.tensor._memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -16481,7 +16481,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_s_got_differing_extents_in_dimensi, __pyx_k_got_differing_extents_in_dimensi, sizeof(__pyx_k_got_differing_extents_in_dimensi), 0, 0, 1, 0},
   {&__pyx_n_s_id, __pyx_k_id, sizeof(__pyx_k_id), 0, 0, 1, 1},
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
-  {&__pyx_n_s_inertia, __pyx_k_inertia, sizeof(__pyx_k_inertia), 0, 0, 1, 1},
   {&__pyx_n_s_itemsize, __pyx_k_itemsize, sizeof(__pyx_k_itemsize), 0, 0, 1, 1},
   {&__pyx_kp_s_itemsize_0_for_cython_array, __pyx_k_itemsize_0_for_cython_array, sizeof(__pyx_k_itemsize_0_for_cython_array), 0, 0, 1, 0},
   {&__pyx_n_s_kind, __pyx_k_kind, sizeof(__pyx_k_kind), 0, 0, 1, 1},
@@ -16497,12 +16496,13 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_numpy, __pyx_k_numpy, sizeof(__pyx_k_numpy), 0, 0, 1, 1},
   {&__pyx_n_s_obj, __pyx_k_obj, sizeof(__pyx_k_obj), 0, 0, 1, 1},
   {&__pyx_n_s_pack, __pyx_k_pack, sizeof(__pyx_k_pack), 0, 0, 1, 1},
+  {&__pyx_n_s_paxes_inertia_tensor, __pyx_k_paxes_inertia_tensor, sizeof(__pyx_k_paxes_inertia_tensor), 0, 0, 1, 1},
   {&__pyx_kp_s_paxes_inertia_tensor_pyx, __pyx_k_paxes_inertia_tensor_pyx, sizeof(__pyx_k_paxes_inertia_tensor_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_pickle, __pyx_k_pickle, sizeof(__pyx_k_pickle), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_PickleError, __pyx_k_pyx_PickleError, sizeof(__pyx_k_pyx_PickleError), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_checksum, __pyx_k_pyx_checksum, sizeof(__pyx_k_pyx_checksum), 0, 0, 1, 1},
-  {&__pyx_n_s_pyx_fuse_0inertia, __pyx_k_pyx_fuse_0inertia, sizeof(__pyx_k_pyx_fuse_0inertia), 0, 0, 1, 1},
-  {&__pyx_n_s_pyx_fuse_1inertia, __pyx_k_pyx_fuse_1inertia, sizeof(__pyx_k_pyx_fuse_1inertia), 0, 0, 1, 1},
+  {&__pyx_n_s_pyx_fuse_0tensor, __pyx_k_pyx_fuse_0tensor, sizeof(__pyx_k_pyx_fuse_0tensor), 0, 0, 1, 1},
+  {&__pyx_n_s_pyx_fuse_1tensor, __pyx_k_pyx_fuse_1tensor, sizeof(__pyx_k_pyx_fuse_1tensor), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_getbuffer, __pyx_k_pyx_getbuffer, sizeof(__pyx_k_pyx_getbuffer), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_result, __pyx_k_pyx_result, sizeof(__pyx_k_pyx_result), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_state, __pyx_k_pyx_state, sizeof(__pyx_k_pyx_state), 0, 0, 1, 1},
@@ -16554,10 +16554,10 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "tensor.pyx":4
+  /* "paxes/inertia/tensor.pyx":4
  * 
  * 
- * cpdef floating[:, :] inertia(floating[:, :] coords):             # <<<<<<<<<<<<<<
+ * cpdef floating[:, :] tensor(floating[:, :] coords):             # <<<<<<<<<<<<<<
  *     return coords
  */
   __pyx_tuple__3 = PyTuple_Pack(1, __pyx_kp_s__2); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -16798,16 +16798,16 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__28);
   __Pyx_GIVEREF(__pyx_tuple__28);
 
-  /* "tensor.pyx":4
+  /* "paxes/inertia/tensor.pyx":4
  * 
  * 
- * cpdef floating[:, :] inertia(floating[:, :] coords):             # <<<<<<<<<<<<<<
+ * cpdef floating[:, :] tensor(floating[:, :] coords):             # <<<<<<<<<<<<<<
  *     return coords
  */
   __pyx_tuple__29 = PyTuple_Pack(2, __pyx_n_s_coords, __pyx_n_s_coords); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__29);
   __Pyx_GIVEREF(__pyx_tuple__29);
-  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_paxes_inertia_tensor_pyx, __pyx_n_s_pyx_fuse_0inertia, 4, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_paxes_inertia_tensor_pyx, __pyx_n_s_pyx_fuse_0tensor, 4, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 4, __pyx_L1_error)
 
   /* "View.MemoryView":285
  *         return self.name
@@ -16924,8 +16924,8 @@ static int __Pyx_modinit_function_export_code(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_modinit_function_export_code", 0);
   /*--- Function export code ---*/
-  if (__Pyx_ExportFunction("__pyx_fuse_0inertia", (void (*)(void))__pyx_fuse_0__pyx_f_6tensor_inertia, "__Pyx_memviewslice (__Pyx_memviewslice, int __pyx_skip_dispatch)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ExportFunction("__pyx_fuse_1inertia", (void (*)(void))__pyx_fuse_1__pyx_f_6tensor_inertia, "__Pyx_memviewslice (__Pyx_memviewslice, int __pyx_skip_dispatch)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ExportFunction("__pyx_fuse_0tensor", (void (*)(void))__pyx_fuse_0__pyx_f_5paxes_7inertia_6tensor_tensor, "__Pyx_memviewslice (__Pyx_memviewslice, int __pyx_skip_dispatch)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ExportFunction("__pyx_fuse_1tensor", (void (*)(void))__pyx_fuse_1__pyx_f_5paxes_7inertia_6tensor_tensor, "__Pyx_memviewslice (__Pyx_memviewslice, int __pyx_skip_dispatch)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -17159,14 +17159,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_tensor) {
+  if (__pyx_module_is_main_paxes__inertia__tensor) {
     if (PyObject_SetAttrString(__pyx_m, "__name__", __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "tensor")) {
-      if (unlikely(PyDict_SetItemString(modules, "tensor", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "paxes.inertia.tensor")) {
+      if (unlikely(PyDict_SetItemString(modules, "paxes.inertia.tensor", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -17187,33 +17187,33 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "tensor.pyx":4
+  /* "paxes/inertia/tensor.pyx":4
  * 
  * 
- * cpdef floating[:, :] inertia(floating[:, :] coords):             # <<<<<<<<<<<<<<
+ * cpdef floating[:, :] tensor(floating[:, :] coords):             # <<<<<<<<<<<<<<
  *     return coords
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_6tensor_3__pyx_fuse_0inertia, 0, __pyx_n_s_pyx_fuse_0inertia, NULL, __pyx_n_s_tensor, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_5paxes_7inertia_6tensor_3__pyx_fuse_0tensor, 0, __pyx_n_s_pyx_fuse_0tensor, NULL, __pyx_n_s_paxes_inertia_tensor, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_float, __pyx_t_2) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_6tensor_5__pyx_fuse_1inertia, 0, __pyx_n_s_pyx_fuse_1inertia, NULL, __pyx_n_s_tensor, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_5paxes_7inertia_6tensor_5__pyx_fuse_1tensor, 0, __pyx_n_s_pyx_fuse_1tensor, NULL, __pyx_n_s_paxes_inertia_tensor, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_double, __pyx_t_2) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_mdef_6tensor_1inertia, 0, __pyx_n_s_inertia, NULL, __pyx_n_s_tensor, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_mdef_5paxes_7inertia_6tensor_1tensor, 0, __pyx_n_s_tensor, NULL, __pyx_n_s_paxes_inertia_tensor, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   ((__pyx_FusedFunctionObject *) __pyx_t_2)->__signatures__ = __pyx_t_1;
   __Pyx_GIVEREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_inertia, __pyx_t_2) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_tensor, __pyx_t_2) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "tensor.pyx":1
+  /* "paxes/inertia/tensor.pyx":1
  * from cython cimport floating             # <<<<<<<<<<<<<<
  * 
  * 
@@ -17385,11 +17385,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_3);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init tensor", 0, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init paxes.inertia.tensor", 0, __pyx_lineno, __pyx_filename);
     }
     Py_DECREF(__pyx_m); __pyx_m = 0;
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init tensor");
+    PyErr_SetString(PyExc_ImportError, "init paxes.inertia.tensor");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
