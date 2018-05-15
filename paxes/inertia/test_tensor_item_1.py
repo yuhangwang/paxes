@@ -1,10 +1,11 @@
-import paxes.inertia.tensor_item as item
+from paxes.inertia import tensor_item
 import numpy
+from pytest import approx
 
 
 def test():
     xyz = numpy.array([1.0, 1.0, 1.0])
-    answer = item.tensor_item(xyz)
+    answer = tensor_item(xyz)
     expect = numpy.array(
         [
             [2.0, -1.0, -1.0],
@@ -12,4 +13,4 @@ def test():
             [-1.0, -1.0, 2.0],
         ]
     )
-    assert (answer == expect).all()
+    assert answer == approx(expect)

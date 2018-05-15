@@ -1,5 +1,6 @@
 sublime
 .pytest_cache
+try.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
