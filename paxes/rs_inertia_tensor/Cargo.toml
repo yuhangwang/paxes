@@ -1,0 +1,13 @@
+[package]
+name = "inertia_tensor"
+version = "0.1.0"
+authors = ["Yuhang (Steven) Wang"]
+
+[lib]
+name = "rs_inertia_tensor"
+crate-type = ["cdylib"]
+
+[dependencies]
+numpy = { git = "https://github.com/termoshtt/rust-numpy"}
+cpython = "0.1"
+ndarray = "0.10"
